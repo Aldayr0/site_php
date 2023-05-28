@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanneRecife</title>
+    <link rel="icon" type="image/png" href="img/logo2-removebg-preview.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/planejamento_novo.css">
+
+</head>
+
+<body style="background-color: #00B9DA;"">
+
+
+    
+    <nav class=" navbar navbar-light " style=" background-color: #0295af; border-bottom: 1px white solid;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index_2.html">
+            <img src="img/logo2-removebg-preview.png" alt="" width="40" class="">
+            <span style="color: white;">PlanneRecife</span>
+        </a>
+
+
+
+        <form class="d-flex">
+            <img class="btn btn-outline-light p-0 me-1 " src="img/account_circle.png " width="42" alt="">
+            <a class="btn btn-outline-light" href="#">Sair</a>
+        </form>
+    </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid d-flex overflow-hidden ">
+
+        <div class="container w-25 m-0 p-0 ">
+
+
+            <div class="row row-cols-1 bg-row text-center text-white">
+                <a href="planejamento_inicio2.html" class="col text-white p-3 bg-box text-decoration-none">
+                    planejamentos
+                </a>
+
+                <a href="planejamento_novo.html" class="col text-white p-2  bg-box">
+                    Novo<br>Planejamento
+                </a>
+
+                <a href="Planejamento_nova_turma.html" class="col p-2 bg-box text-white text-decoration-none">
+
+                    Nova<br>Turma
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container m-0 ms-4 p-0">
+            <div class="row bg-row b_direita text-white pt-2 pb-2 " style=" border-bottom: solid white 0.1em;">
+                <div class="col ms-3 align-self-center">
+                    <div href="#" class="text-white">
+                        Selecionar data:
+                    </div>
+                </div>
+
+                <form class="col-9 text-white">
+
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label" for="data-inicio">Data de início:</label>
+                        </div>
+                        <div class="col-9 me-2">
+                            <label class="form-label" for="data-termino">Data de término:</label>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <select class="form-select dia w-auto d-inline m-1 p-0 ps-1 pe-4" id="dia" name="dia" style="border-radius: 4px; border: solid 0.1em white; 
+                            ">
+
+                        </select>
+                        <select class="form-select w-auto d-inline p-0 ps-1 pe-2" id="mes" name="mes" style="border-radius: 4px; border: solid 0.1em white;
+                            ">
+
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+
+                        <select class="form-select dia w-auto d-inline m-1 p-0 ps-3 pe-3" id="dia" name="dia" style="border-radius: 4px; border: solid 0.1em white; 
+                            ">
+
+                        </select>
+                        <select class="form-select w-auto d-inline p-0 ps-1 pe-3" id="mes" name="mes" style="border-radius: 4px; border: solid 0.1em white;
+                            ">
+
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+                        <input class="btn btn-outline-light p-1" type="submit" value="Pesquisar">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="row b_direita text-white " style="border-left: solid white 0.1em; 
+            border-right: solid white 0.1em;">
+                <div class="col p-3 text-center ">
+                    <div class="box">
+                        Dias selecionados
+                    </div>
+                </div>
+            </div>
+            <div class="row text-white pb-2" style="border-left: solid white 0.1em; 
+            border-right: solid white 0.1em;">
+                <div class="col offset-1 me-4">
+                    22/03 segunda-feira
+                </div>
+                <div class="col">
+                    23/03 terça-feira
+                </div>
+                <div class="col">
+                    24/03 quarta-feira
+                </div>
+
+            </div>
+
+            <div class="row text-white ps-3 pt-3 pb-2" style="border: white solid 0.1em;">
+                <div class="col-1">
+                    Turma
+                </div>
+                <div class="col">
+                    <select name="nomeEscola" id="nomeEscola" class="form-select w-auto d-inline p-0 ps-1 pe-5"
+                        >
+                        <option selected value="0">Nome da escola</option>
+                        <option value="1">Alvares Cabral</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select name="nomeEscola" id="nomeEscola" class="form-select w-auto d-inline p-0 ps-1 pe-1"
+                        >
+                        <option selected value="0">Serie</option>
+                        <option value="1">Alvares Cabral</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select name="nomeEscola" id="nomeEscola" class="form-select w-auto d-inline p-0 ps-1 pe-1"
+                        >
+                        <option selected value="0">Turma</option>
+                        <option value="1">Alvares Cabral</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div class="row text-white ps-3 pt-3 pb-2" style="border: white solid 0.1em;">
+                <div class="col-3">
+                    Componente Curricular:
+                </div>
+                <div class="col-3">
+                    <select name="nomeEscola" id="nomeEscola" class="form-select w-auto d-inline p-0 ps-1 pe-2"
+                        >
+                        <option selected value="0">Selecionar</option>
+                        <option value="1">Alvares Cabral</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <select name="nomeEscola" id="nomeEscola" class="form-select w-auto d-inline p-0 ps-1 pe-5"
+                       >
+                        <option selected value="0">Visualizar Planejamento</option>
+                        <option value="1">Alvares Cabral</option>
+                    </select>
+                </div>
+
+
+
+            </div>
+
+            <div class="row text-white ps-3 pt-3 pb-2" style="border: white solid 0.1em;">
+                <div class="col-3">
+                    <form class="">
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label" for="">Situação Didatica</label>
+                                <input class="form-control p-5" type="text" name="" id="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col offset-3">
+                    <label class="form-label" for="mdidatico">Materiais Utilizados</label>
+                    <select class="form-select w-25" name="mdidatico" id="mdidatico"></select>
+                </div>
+                <div class="col align-self-end ms-3 ps-2 pe-0">
+                    <button class="btn btn-outline-light">Salvar</button>
+                    <button class="btn btn-outline-light">Imprimir</button>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+
+
+        const mesSelect = document.getElementById("mes");
+        const diaSelect = document.getElementById("dia");
+
+        // Função para gerar as opções de dia com base no mês selecionado
+        function gerarDias() {
+            diaSelect.innerHTML = "";
+            const mesSelecionado = parseInt(mesSelect.value);
+            const ultimoDia = new Date(new Date().getFullYear(), mesSelecionado, 0).getDate();
+
+            for (let dia = 1; dia <= ultimoDia; dia++) {
+                const option = document.createElement("option");
+                option.value = dia;
+                option.textContent = dia;
+                diaSelect.appendChild(option);
+            }
+        }
+
+        // Evento para chamar a função de geração de dias quando o mês for alterado
+        mesSelect.addEventListener("change", gerarDias);
+
+        // Chamar a função inicialmente para exibir os dias do mês atual
+        gerarDias();
+    </script>
+</body>
+
+</html>
